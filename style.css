@@ -1,0 +1,235 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+}
+
+body {
+  background-color: #8a51fc;
+}
+
+.logo {
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: 20px auto;
+}
+
+main {
+  width: 375px;
+  background: #3acf0d;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 44px 24px 23px;
+}
+
+label {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+select, input {
+  background: #ffffff;
+  border: 1px solid #bbbbbb;
+  border-radius: 4px;
+  height: 48px;
+  width: 100%;
+  margin-bottom: 24px;
+  appearance: none;
+  padding-left: 18px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #555555;
+  cursor: pointer;
+}
+
+button {
+  background: #472fd3;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  height: 48px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}  
+
+button:hover {
+  opacity: 0.8;
+}
+button:active {
+  opacity: 0.6;
+}
+
+section {
+  border: 1px solid #772fd3; 
+  border-radius: 20px;
+  margin-top: 36px;
+  padding: 12px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.from, div.to {
+  width: 122px;
+  height: 86px;
+}
+
+.currency-img, .flag {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.currency-img.rotate, .flag.rotate {
+  transform: rotateY(360deg);
+}
+
+.to, .from {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.currency {
+  font-size: 14px;
+  color: #777777;
+}
+
+
+.currency-value, .currency-value-to-converter {
+  color: #555555;
+  font-size: 20px;
+  font-weight: 700;
+}
+/* Media Queries para Responsividad */
+
+/* Tablets (768px e menores) */
+@media (max-width: 768px) {
+  .logo {
+    width: 250px;
+    height: 250px;
+    margin: 15px auto;
+  }
+
+  main {
+    width: 90%;
+    max-width: 500px;
+    padding: 30px 20px;
+  }
+
+  label {
+    font-size: 13px;
+  }
+
+  select, input {
+    height: 44px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  button {
+    height: 44px;
+    font-size: 16px;
+  }
+
+  section {
+    margin-top: 30px;
+    padding: 10px;
+  }
+
+  .currency-value, .currency-value-to-converter {
+    font-size: 18px;
+  }
+}
+
+/* Celulares grandes (480px a 768px) */
+@media (max-width: 480px) {
+  .logo {
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+  }
+
+  main {
+    width: 95%;
+    max-width: 100%;
+    padding: 25px 15px;
+    margin: 5px auto;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  select, input {
+    height: 40px;
+    font-size: 13px;
+    margin-bottom: 18px;
+    padding-left: 15px;
+  }
+
+  button {
+    height: 40px;
+    font-size: 15px;
+  }
+
+  section {
+    margin-top: 25px;
+    padding: 8px;
+  }
+
+  div.from, div.to {
+    width: 100px;
+    height: 75px;
+  }
+
+  .currency-img, .flag {
+    width: 35px;
+    height: 35px;
+  }
+
+  .currency {
+    font-size: 12px;
+  }
+
+  .currency-value, .currency-value-to-converter {
+    font-size: 16px;
+  }
+}
+
+/* Celulares pequenos (menores a 360px) */
+@media (max-width: 360px) {
+  main {
+    width: 100%;
+    padding: 20px 12px;
+  }
+
+  label {
+    font-size: 11px;
+  }
+
+  select, input {
+    height: 38px;
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  button {
+    height: 38px;
+    font-size: 14px;
+  }
+
+  .currency-value, .currency-value-to-converter {
+    font-size: 15px;
+  }
+}
